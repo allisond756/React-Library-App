@@ -13,7 +13,7 @@ function App() {
       domain="dev-2octiplbwtfgs5c1.us.auth0.com"
       clientId="3qhCOJrU9eKrVfvwVDPbF2xbHUVnSjz6"
       authorizationParams={{
-        redirect_uri: "http://localhost:5173"
+        redirect_uri: "https://thriving-kangaroo-77d55a.netlify.app"
       }}
     >
       <HashRouter>
