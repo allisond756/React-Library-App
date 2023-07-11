@@ -46,20 +46,20 @@ function DataTable() {
             <div className='flex flex-row'>
                 <div>
                     <button
-                        className='p-3 m-3 bg-slate-300 rounded hover:bg-slate-800 hover:text-white'
+                        className='p-2 m-3 bg-amber-200 bg-opacity-50 border-2 tracking-wide text-yellow-900 font-semibold  border-yellow-800 border-dashed rounded hover:bg-rose-200 hover:text-white'
                         onClick={() => handleOpen()}
                     >
                         Add New Book
                     </button>
                 </div>
-                <Button onClick={handleOpen} className="p-3 bg-slate-300 rounded m-3 hover:bg-slate-800 hover:text-white" >Update Book Info</Button>
-                <Button onClick={deleteData} className="p-3 bg-slate-300 rounded m-3 hover:bg-slate-800 hover:text-white" >Delete Book</Button>
+                <Button onClick={handleOpen} className="p-2 m-3 bg-amber-200 bg-opacity-50 tracking-wide text-yellow-900 font-semibold border-2 border-dashed  border-yellow-800 rounded hover:bg-rose-200 hover:text-white" >Update Book Info</Button>
+                <Button onClick={deleteData} className="p-2 m-3 bg-amber-200 bg-opacity-50 tracking-wide text-yellow-900 font-semibold border-2 border-dashed  border-yellow-800 rounded hover:bg-rose-200 hover:text-white" >Delete Book</Button>
             </div>
             <div 
                 className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
                 style = {{ height: 400, width: '100%'}}
             >
-                <h2 className='p-3 bg-slate-300 my-2 rounded'>My Books</h2>
+                <h2 className='p-2 mb-2 flex flex-col items-center bg-amber-200 bg-opacity-50 tracking-wide text-yellow-900 font-semibold border-2 border-dashed  border-yellow-800 rounded'>My Books</h2>
                 <DataGrid rows={contactData} columns={columns} pageSizeOptions={[5]}
                 checkboxSelection={true} 
                 onRowSelectionModelChange={ (item:any) => {
