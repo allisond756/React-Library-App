@@ -43,29 +43,29 @@ const BookForm = (props:BookFormProps) => {
 
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
+        <div className="formbox">
           <label htmlFor='title'>Book Title</label>
           <Input {...register('title')} name='title' placeholder='Title'/>
         </div>
-        <div>
+        <div className="formbox">
           <label htmlFor='author'>Author</label>
           <Input {...register('author')} name='author' placeholder='Author'/>
         </div>
-        <div>
+        <div className="formbox">
           <label htmlFor='book_length'>Book Length</label>
           <Input {...register('book_length')} name='book_length' placeholder='Book Length'/>
         </div>
-        <div>
+        <div className="formbox">
           <label htmlFor='book_type'>Book Type</label>
           <Input {...register('book_type')} name='book_type' placeholder='Book Type'/>
         </div>
-        <div>
+        <div className="formbox">
           <label htmlFor='isbn'>ISBN</label>
           <Input {...register('isbn')} name='isbn' placeholder='ISBN'/>
         </div>
         <div className='flex p-1'>
           <Button
-            className='flex justify-center m-3 w-full bg-slate-300 p-2 rounded hover:bg-slate-800 text-white'
+            className='flex justify-center m-3 w-full bg-amber-200 text-amber-900 border-2 border-dashed border-amber-800 p-2 rounded hover:bg-rose-200 hover:text-white'
             >
               Submit
             </Button>
